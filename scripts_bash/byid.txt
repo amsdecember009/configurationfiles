@@ -1,0 +1,17 @@
+total 0
+lrwxrwxrwx 1 root root  9 Dec  4 01:15 ata-Samsung_SSD_840_Series_S14ENEACB08304M -> ../../sda
+lrwxrwxrwx 1 root root 10 Dec  7 03:54 dm-name-encboot -> ../../dm-0
+lrwxrwxrwx 1 root root 10 Dec  4 01:15 dm-name-encmain -> ../../dm-2
+lrwxrwxrwx 1 root root 10 Dec  4 01:15 dm-name-mvg-home -> ../../dm-5
+lrwxrwxrwx 1 root root 10 Dec  4 01:15 dm-name-mvg-root -> ../../dm-4
+lrwxrwxrwx 1 root root 10 Dec  4 01:15 dm-name-mvg-swap -> ../../dm-3
+lrwxrwxrwx 1 root root 10 Dec  4 01:15 dm-uuid-CRYPT-LUKS1-12c23475ec144d128981860833c81d6a-encmain -> ../../dm-2
+lrwxrwxrwx 1 root root 10 Dec  7 03:54 dm-uuid-CRYPT-LUKS1-4eb1c305937444db85a31eeb387ddd12-encboot -> ../../dm-0
+lrwxrwxrwx 1 root root 10 Dec  4 01:15 dm-uuid-LVM-C5S1HPf8lz7sJSKqcHfYNvZN2twECacx76vQHUYMOksFUreVRGcc9OruVdXAGzmF -> ../../dm-4
+lrwxrwxrwx 1 root root 10 Dec  4 01:15 dm-uuid-LVM-C5S1HPf8lz7sJSKqcHfYNvZN2twECacxJpI3UEXSfrEXetaxXUx5MOCLHY5n3Asz -> ../../dm-3
+lrwxrwxrwx 1 root root 10 Dec  4 01:15 dm-uuid-LVM-C5S1HPf8lz7sJSKqcHfYNvZN2twECacxfWOOqcRdxb7ngG7WBZBc6CBWQ6bc4CaB -> ../../dm-5
+lrwxrwxrwx 1 root root 10 Dec  4 01:15 lvm-pv-uuid-Nw2VOp-ZzFU-NGwZ-cWsf-GQuZ-R125-DWXyEX -> ../../dm-2
+lrwxrwxrwx 1 root root  9 Dec 10 14:24 usb-_USB_DISK_2.0_0703933FA83A8E99-0:0 -> ../../sdc
+lrwxrwxrwx 1 root root 10 Dec 10 14:24 usb-_USB_DISK_2.0_0703933FA83A8E99-0:0-part1 -> ../../sdc1
+lrwxrwxrwx 1 root root 10 Dec 10 14:24 usb-_USB_DISK_2.0_0703933FA83A8E99-0:0-part2 -> ../../sdc2
+lrwxrwxrwx 1 root root  9 Dec  4 01:15 wwn-0x5002538550074a4d -> ../../sda

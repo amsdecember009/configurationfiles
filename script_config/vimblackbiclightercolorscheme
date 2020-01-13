@@ -1,0 +1,124 @@
+" tabris redlight colorscheme "
+
+set background=dark
+highlight clear
+if exists("syntax_on")
+        syntax reset
+endif
+
+let g:colors_name = "redlight"
+" color declarations
+let s:clear             = ['NONE', 'NONE'  ]
+let s:lightcoral        = ['210', '#ff8787']
+
+let s:grey100           = [231, '#ffffff']
+
+
+let s:black             = [0, '#000000']
+let s:grey78            = [251, '#c6c6c6']
+
+" Text style
+let s:italic            = 'italic'
+let s:underline         = 'underline'
+let s:none              = 'NONE'
+
+" Helper function highlight executions
+function! s:highlight(group, fg, bg, style)
+        exec  "highlight "      . a:group
+          \ . " ctermfg="       . a:fg[0]
+          \ . " ctermbg="       . a:bg[0]
+          \ . " cterm="         . a:style
+          \ . " guifg="         . a:fg[1]
+          \ . " guibg="         . a:bg[1]
+          \ . " gui="           . a:style
+endfunction
+
+" following section syntax highlighting groups
+"
+
+
+call s:highlight('Constant',   s:lightcoral,  s:black, s:none)
+call s:highlight('String',     s:lightcoral,     s:black, s:none)
+call s:highlight('Number',     s:grey100,        s:black, s:none)
+call s:highlight('Character',  s:lightcoral,     s:black, s:none)
+call s:highlight('Boolean',    s:grey78,         s:black, s:none)
+call s:highlight('Float',      s:lightcoral, s:black, s:none)
+call s:highlight('Comment',    s:lightcoral, s:black, s:none)
+
+call s:highlight('Identifier', s:lightcoral,         s:black, s:none)
+call s:highlight('Function',   s:lightcoral,         s:black, s:none)
+
+call s:highlight('Statement',  s:lightcoral,     s:black, s:none)
+call s:highlight('Conditional', s:lightcoral,    s:black, s:none)
+call s:highlight('Repeat',     s:lightcoral,     s:black, s:none)
+call s:highlight('Label',      s:lightcoral,     s:black, s:none)
+call s:highlight('Operator',   s:lightcoral,     s:black, s:none)
+call s:highlight('Keyword',    s:lightcoral,     s:black, s:none)
+call s:highlight('Exeception', s:lightcoral,     s:black, s:none)
+
+call s:highlight('PreProc',    s:lightcoral, s:black, s:none)
+call s:highlight('Include',    s:lightcoral, s:black, s:none)
+call s:highlight('Define',     s:lightcoral, s:black, s:none)
+call s:highlight('Macro',      s:grey78,         s:black, s:none)
+call s:highlight('PreCondit',  s:grey78,         s:black, s:none)
+
+call s:highlight('Type',         s:grey100,        s:black, s:none)
+call s:highlight('StorageClass', s:grey100,        s:black, s:none)
+call s:highlight('Structure',    s:lightcoral,   s:black, s:none)
+call s:highlight('Typedef',      s:lightcoral,   s:black, s:none)
+
+call s:highlight('Special',        s:lightcoral,    s:black,  s:none)
+call s:highlight('SpecialChar',    s:lightcoral,    s:black,  s:none)
+call s:highlight('Delimiter',      s:lightcoral,    s:black,  s:none)
+call s:highlight('SpecialComment', s:lightcoral,    s:black,  s:none)
+call s:highlight('Debug',          s:lightcoral, s:black, s:none)
+call s:highlight('Underlined',     s:lightcoral,        s:black, s:none)
+call s:highlight('Error',          s:lightcoral,        s:black, s:none)
+call s:highlight('Todo',           s:lightcoral,        s:black, s:none)
+
+call s:highlight('Directory',      s:grey100,       s:black, s:none)
+call s:highlight('CursorLine',     s:grey100,       s:black, s:none)
+call s:highlight('matchParen',     s:grey100,       s:black, s:none)
+call s:highlight('ColorColumn',    s:grey100,       s:black, s:none)
+
+
+
+highlight! link SignColumn FoldColumn
+highlight! link ColorColumn FoldColumn
+highlight! link CursorColumn CursorLine
+
+highlight! link Folded LineNr
+
+highlight! link Conceal Normal
+highlight! link ErrorMsg Error
+
+highlight! link Conditional Statement
+highlight! link Repeat Statement
+highlight! link Label Statement
+highlight! link Exception Statement
+
+highlight! link Include PreProc
+highlight! link Define PreProc
+highlight! link Macro PreProc
+highlight! link PreCondit PreProc
+
+highlight! link StorageClass Type
+highlight! link Structure Type
+highlight! link Typedef Type
+
+highlight! link SpecialChar Special
+highlight! link Tag Special
+highlight! link Delimiter Special
+highlight! link Debug Special
+highlight! link Question Special
+
+highlight! link VisualNOS Visual
+highlight! link TabLine StatusLineNC
+highlight! link TabLineFill StatusLineNC
+highlight! link TabLineSel StatusLine
+
+"Intergace highlighting
+call s:highlight('Normal', s:lightcoral, s:black,       s:none)
+call s:highlight('Visual', s:lightcoral, s:black,       s:none)
+call s:highlight('Cursor', s:grey100, s:black,  s:none)
+call s:highlight('Search', s:grey100, s:black,  s:none)

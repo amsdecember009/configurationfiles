@@ -1,0 +1,257 @@
+ Settings
+ Keybindings
+ -----------
+ browser  backspace      browser-up
+ browser  i              toggle show_hidden
+ browser  space          win-activate
+ browser  u              win-update
+ common   !              push shell
+ common   +              vol +10%
+ common   ,              seek -1m
+ common   -              vol -10%
+ common   .              seek +1m
+ common   /              search-start
+ common   1              view tree
+ common   2              view sorted
+ common   3              view playlist
+ common   4              view queue
+ common   5              view browser
+ common   6              view filters
+ common   7              view settings
+ common   =              vol +10%
+ common   ?              search-b-start
+ common   C              toggle continue
+ common   D              win-remove
+ common   E              win-add-Q
+ common   F              push filter
+ common   G              win-bottom
+ common   I              echo {}
+ common   L              push live-filter
+ common   M              toggle play_library
+ common   N              search-prev
+ common   P              win-mv-before
+ common   U              win-update-cache
+ common   [              vol +1% +0
+ common   ]              vol +0 +1%
+ common   ^B             win-page-up
+ common   ^C             echo Type :quit<enter> to exit cmus.
+ common   ^D             win-half-page-down
+ common   ^E             win-scroll-down
+ common   ^F             win-page-down
+ common   ^L             refresh
+ common   ^R             toggle repeat_current
+ common   ^U             win-half-page-up
+ common   ^Y             win-scroll-up
+ common   a              win-add-l
+ common   b              player-next
+ common   c              player-pause
+ common   delete         win-remove
+ common   down           win-down
+ common   e              win-add-q
+ common   end            win-bottom
+ common   enter          win-activate
+ common   f              toggle follow
+ common   g              win-top
+ common   h              seek -5
+ common   home           win-top
+ common   i              win-sel-cur
+ common   j              win-down
+ common   k              win-up
+ common   l              seek +5
+ common   left           seek -5
+
+common   m              toggle aaa_mode
+ common   mlb_click_selected win-activate
+ common   mouse_scroll_down win-down
+ common   mouse_scroll_up win-up
+ common   n              search-next
+ common   o              toggle play_sorted
+ common   p              win-mv-after
+ common   page_down      win-page-down
+ common   page_up        win-page-up
+ common   q              quit -i
+ common   r              toggle repeat
+ common   right          seek +5
+ common   s              toggle shuffle
+ common   space          win-toggle
+ common   t              toggle show_remaining_time
+ common   tab            win-next
+ common   u              update-cache
+ common   up             win-up
+ common   v              player-stop
+ common   x              player-play
+ common   y              win-add-p
+ common   z              player-prev
+ common   {              vol -1% -0
+ common   }              vol -0 -1%
+
+ Unbound Commands
+ ----------------
+ add
+ bind
+ cd
+ clear
+ colorscheme
+ factivate
+ filter
+ fset
+ help
+ invert
+ left-view
+ live-filter
+ load
+ lqueue
+ mark
+ pl-create
+ pl-export
+ pl-import
+ pl-rename
+ player-pause-playback
+ prev-view
+ pwd
+ raise-vte
+ rand
+ right-view
+ run
+ save
+ set
+ shell
+ showbind
+ shuffle
+ source
+ tqueue
+ unbind
+ unmark
+ version
+ w
+ win-page-bottom
+ win-page-middle
+ win-page-top
+ wq
+
+ Options
+ -------
+
+
+aaa_mode                      album
+ altformat_current              %F
+ altformat_playlist             %f%= %d
+ altformat_title               %f
+ altformat_trackwin             %f%= %d
+ auto_expand_albums_follow     true
+ auto_expand_albums_search     true
+ auto_expand_albums_selcur     true
+ auto_reshuffle                true
+ buffer_seconds                10
+ color_cmdline_attr            default
+ color_cmdline_bg              black
+ color_cmdline_fg              210
+ color_cur_sel_attr            default
+ color_error                   210
+ color_info                    white
+ color_separator               black
+ color_statusline_attr         default
+ color_statusline_bg           gray
+ color_statusline_fg           black
+ color_titleline_attr          default
+ color_titleline_bg            black
+ color_titleline_fg            210
+ color_trackwin_album_attr     default
+ color_trackwin_album_bg       default
+ color_trackwin_album_fg       210
+ color_win_attr                default
+ color_win_bg                  black
+ color_win_cur                 black
+ color_win_cur_attr            default
+ color_win_cur_sel_attr        default
+ color_win_cur_sel_bg          black
+ color_win_cur_sel_fg          210
+ color_win_dir                 black
+ color_win_fg                  210
+ color_win_inactive_cur_sel_attr default
+ color_win_inactive_cur_sel_bg black
+ color_win_inactive_cur_sel_fg 210
+ color_win_inactive_sel_attr   default
+ color_win_inactive_sel_bg     black
+ color_win_inactive_sel_fg     210
+ color_win_sel_attr            default
+ color_win_sel_bg              210
+ color_win_sel_fg              black
+ color_win_title_attr          default
+ color_win_title_bg            black
+ color_win_title_fg            210
+ confirm_run                   true
+ continue                      true
+ device                        /dev/cdrom
+ display_artist_sort_name      false
+ dsp.alsa.device               default
+ dsp.ao.buffer_size            16384
+ dsp.ao.device_interface
+ dsp.ao.driver
+ dsp.ao.wav_counter            1
+ dsp.ao.wav_dir                /home/tabris
+ dsp.jack.resampling_quality   2
+ dsp.jack.server_name
+dsp.oss.device
+ follow                        false
+ format_current                 %a - %l -%3n. %t%= %y
+ format_playlist                %-21%a %3n. %t%= %y %d %{?X!=0?%3X ?    }
+ format_playlist_va             %-21%A %3n. %t (%a)%= %y %d %{?X!=0?%3X ?    }
+ format_statusline              %{status} %{?show_playback_position?%{position} %{?duration?/ %{duration} }?%{?duration?%{duration} }}- %{total} %{?bpm>0?at %{bpm} BPM }%{?volume>=0?vol: %{?lvolume!=rvolume?%{lvolume},%{rvolume} ?%{volume} }}%{?stream?buf: %{buffer} }%{...
+ format_title                  %a - %l - %t (%y)
+ format_trackwin               %3n. %t%= %y %d
+ format_trackwin_album          %l %= %{albumduration}
+ format_trackwin_va            %3n. %t (%a)%= %y %d
+ format_treewin                  %l
+ format_treewin_artist         %a
+ icecast_default_charset       ISO-8859-1
+ id3_default_charset           ISO-8859-1
+ input.aac.priority            50
+ input.cdio.cddb_url           freedb.freedb.org:8880
+ input.cdio.priority           50
+ input.cue.priority            50
+ input.ffmpeg.priority         30
+ input.flac.priority           50
+ input.mad.priority            55
+ input.modplug.priority        50
+ input.mpc.priority            50
+ input.vorbis.priority         50
+ input.wav.priority            50
+ input.wavpack.priority        50
+ lib_add_filter
+ lib_sort                      albumartist date album discnumber tracknumber title filename play_count
+ mixer.alsa.channel            Master
+ mixer.alsa.device             default
+ mixer.oss.channel             PCM
+ mixer.oss.device
+ mixer.pulse.restore_volume    1
+ mouse                         false
+ mpris                         true
+ output_plugin                 alsa
+ passwd
+ pl_sort
+ play_library                  true
+ play_sorted                   false
+ repeat                        true
+ repeat_current                false
+ replaygain                    disabled
+ replaygain_limit              true
+ replaygain_preamp             0.000000
+ resume                        false
+ rewind_offset                 5
+ scroll_offset                 2
+ set_term_title                true
+ show_all_tracks               true
+ show_current_bitrate          false
+ show_hidden                   false
+ show_playback_position        true
+ show_remaining_time           false
+ shuffle                       false
+ skip_track_info               false
+ smart_artist_sort             true
+ softvol                       false
+ softvol_state                 0 0
+ start_view                    tree
+ status_display_program
+ time_show_leading_zero        true
+ wrap_search                   true
